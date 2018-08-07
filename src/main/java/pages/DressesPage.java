@@ -11,6 +11,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import java.util.List;
+
 public class DressesPage extends Page {
     public DefaultPageFactory factory = new DefaultPageFactory();
     public TestContext context = TestContext.getContext();
@@ -18,10 +20,10 @@ public class DressesPage extends Page {
     CommonHelper commonHelper = new CommonHelper(null);
     Actions action = new Actions(context.getWebDriver());
     JavascriptExecutor executor = ((JavascriptExecutor) context.getWebDriver());
-
+    List<WebElement> dressList;
 
     private WebElement getAssertionText() {
-        return context.getWebDriver().findElement(By.xpath(DemoshopLocators.dreesesDisplayPage.productAvailabilityText));
+        return context.getWebDriver().findElement(By.xpath(DemoshopLocators.dressesDisplayPage.productAvailabilityText));
     }
 
     public String textToAssert() {
@@ -30,11 +32,21 @@ public class DressesPage extends Page {
     }
 
     private WebElement getDressLocator() {
-        return context.getWebDriver().findElement(By.xpath(DemoshopLocators.dreesesDisplayPage.productLocator));
+        return context.getWebDriver().findElement(By.xpath(DemoshopLocators.dressesDisplayPage.dressSelector));
     }
 
     public ProductDescriptionPage clickOnDress() {
         getDressLocator().click();
+        return factory.create(ProductDescriptionPage.class, true);
+    }
+
+    private List<WebElement> getProductLocator() {
+        return context.getWebDriver().findElements(By.xpath(DemoshopLocators.dressesDisplayPage.productLocator));
+    }
+
+    public ProductDescriptionPage clickOnProduct(int index) {
+        List<WebElement> list = getProductLocator();
+        list.get(index).click();
         return factory.create(ProductDescriptionPage.class, true);
     }
 

@@ -1,5 +1,7 @@
 package main.java.locators;
 
+import com.sun.javafx.binding.StringFormatter;
+
 public class DemoshopLocators {
 
     public class HomePage {
@@ -39,18 +41,21 @@ public class DemoshopLocators {
         public static final String userName = "//*[@id='header']/div[2]/div/div/nav/div[1]/a/span";
     }
 
-    public class dreesesDisplayPage {
+    public class dressesDisplayPage {
         public static final String productAvailabilityText = "//*[@class=\"heading-counter\"]";
-        public static final String productLocator = "//*[@id='center_column']/ul/li[3]/div/div[2]/h5/a";
+        public static final String productLocator = "//*[@id='center_column']/ul/li";
+        public static final String dressSelector = "//*[@id=\"center_column\"]/ul/li[3]/div/div[2]/h5/a";
     }
 
     public class productDescriptionPage {
-        public static final String productText = "//*[@id='center_column']/div/div/div[3]/h1";
+        public static final String productText = "//*[@id=\"center_column\"]/div/div/div[3]/h1";
         public static final String dressSizeSelector = "group_1";
         public static final String colorSelector = "color_14";
+        public static final String colorListSelector = "//*[@id=\"color_to_pick_list\"]/li";
         public static final String addToCartButton = "add_to_cart";
         public static final String cartSummaryLayer = "layer_cart";
         public static final String proceedToCheckoutButton = "//*[@id='layer_cart']/div[1]/div[2]/div[4]/a";
+
     }
 
     public class cartPage {

@@ -1,13 +1,18 @@
 package main.java.util;
 
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.collections.list.SetUniqueList;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.WebDriver;
-
-import java.util.*;
-import java.util.concurrent.TimeUnit;
 
 public final class WindowStack {
     public static final int WAIT_INTERVAL = 1;
@@ -17,11 +22,7 @@ public final class WindowStack {
     //private Thread thread;
     //private ReentrantLock lock;
 
-    /**
-     * Creates a new WindowStack and associates it with a TestContext.
-     *
-     * @param tc
-     */
+
     public WindowStack(WebDriver driver) {//, Thread thread) {
         try {
             Thread.sleep(2000);
@@ -131,13 +132,7 @@ public final class WindowStack {
 		}*/
     }
 
-    /**
-     * Determines whether or not the window indicated by handle is contained in this WindowStack
-     *
-     * @param handle      The handle of the window to search for
-     * @param acquireLock Whether or not to acquire a lock before reading the internal handles variable
-     * @return true if the window handle is contained by this stack, false otherwise
-     */
+
     public boolean contains(String handle) {
         //thread.interrupt();
         //lock();

@@ -14,6 +14,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 public class ProductDescriptionPage extends Page {
 
 
@@ -30,6 +32,7 @@ public class ProductDescriptionPage extends Page {
     }
 
     public String parseProductTitleText() {
+        wait.until(ExpectedConditions.visibilityOf(getProductTitleText()));
         return getProductTitleText().getText();
     }
 
@@ -37,11 +40,10 @@ public class ProductDescriptionPage extends Page {
         return context.getWebDriver().findElement(By.id(DemoshopLocators.productDescriptionPage.dressSizeSelector));
     }
 
-    public void selectSize() {
+    public void selectSize(String size) {
         Select se = new Select(getSizeSelectionLocator());
-        se.selectByVisibleText("M");
+        se.selectByVisibleText(size);
     }
-
 
     private WebElement getColorSelectionLocator() {
         return context.getWebDriver().findElement(By.id(DemoshopLocators.productDescriptionPage.colorSelector));
@@ -49,6 +51,15 @@ public class ProductDescriptionPage extends Page {
 
     public void selectDressColor() {
         getColorSelectionLocator().click();
+    }
+
+    private List<WebElement> getColorSelector() {
+        return context.getWebDriver().findElements(By.xpath(DemoshopLocators.productDescriptionPage.colorListSelector));
+    }
+
+    public void selectDressColorFromList(int index) {
+        List<WebElement> colors = getColorSelector();
+        colors.get(index).click();
     }
 
     private WebElement getAddToCartLocator() {
