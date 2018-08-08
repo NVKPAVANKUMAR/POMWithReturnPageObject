@@ -77,7 +77,7 @@ public class testRunner extends ExtentBase {
         productDescriptionPage = dressesPage.clickOnProduct(2);
         assert productDescriptionPage.parseProductTitleText().equalsIgnoreCase(config.PRODUCT_VERIFICATION_TEXT);
         productDescriptionPage.selectSize("M");
-        productDescriptionPage.selectDressColorFromList(2);
+        productDescriptionPage.selectDressColor("Blue");
         productDescriptionPage.clickAddToCartButton();
         cartPage = productDescriptionPage.clickOnProceedToCheckout();
         assert cartPage.textToAssert().equalsIgnoreCase(config.CART_SPECIFICATION_TEXT);

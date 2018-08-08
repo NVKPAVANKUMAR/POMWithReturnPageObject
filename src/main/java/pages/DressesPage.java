@@ -43,7 +43,7 @@ public class DressesPage extends Page {
     }
 
     private List<WebElement> getProductLocator() {
-        context.getWebDriver().manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+        context.getWebDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return context.getWebDriver().findElements(By.xpath(DemoshopLocators.dressesDisplayPage.productLocator));
     }
 

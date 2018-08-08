@@ -48,7 +48,7 @@ public class DemoshopLocators {
     public class productDescriptionPage {
         public static final String productText = "//*[@id='center_column']/div/div/div[3]/h1";
         public static final String dressSizeSelector = "group_1";
-        public static final String colorSelector = "color_14";
+        public static final String colorSelector = "//*[@id='color_to_pick_list']/child::li/child::a[@name ='%s']";
         public static final String colorListSelector = "//*[@id='color_to_pick_list']/li";
         public static final String addToCartButton = "add_to_cart";
         public static final String cartSummaryLayer = "layer_cart";

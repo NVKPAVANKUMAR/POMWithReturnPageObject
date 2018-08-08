@@ -13,6 +13,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.List;
 
 public class ProductDescriptionPage extends Page {
@@ -44,14 +45,14 @@ public class ProductDescriptionPage extends Page {
         se.selectByVisibleText(size);
     }
 
+
     private WebElement getColorSelectionLocator() {
         return context.getWebDriver().findElement(By.id(DemoshopLocators.productDescriptionPage.colorSelector));
     }
 
     public void selectDressColor(String color) {
-
-
-
+        WebElement ele = context.getWebDriver().findElement(By.xpath(String.format("//*[@id='color_to_pick_list']/child::li/child::a[@name ='%s']", color)));
+        action.click(ele).build().perform();
     }
 
     private List<WebElement> getColorSelector() {

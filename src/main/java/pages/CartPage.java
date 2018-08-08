@@ -21,7 +21,7 @@ public class CartPage extends Page {
     CommonHelper commonHelper = new CommonHelper(null);
     Actions action = new Actions(context.getWebDriver());
     JavascriptExecutor executor = ((JavascriptExecutor) context.getWebDriver());
-    WebDriverWait wait = new WebDriverWait(context.getWebDriver(),10);
+    WebDriverWait wait = new WebDriverWait(context.getWebDriver(), 10);
 
     private WebElement getAddedProductSpecification() {
         return context.getWebDriver().findElement(By.xpath(DemoshopLocators.cartPage.productSpecification));
