@@ -13,7 +13,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.List;
 
 public class ProductDescriptionPage extends Page {
@@ -49,8 +48,10 @@ public class ProductDescriptionPage extends Page {
         return context.getWebDriver().findElement(By.id(DemoshopLocators.productDescriptionPage.colorSelector));
     }
 
-    public void selectDressColor() {
-        getColorSelectionLocator().click();
+    public void selectDressColor(String color) {
+
+
+
     }
 
     private List<WebElement> getColorSelector() {
@@ -69,11 +70,6 @@ public class ProductDescriptionPage extends Page {
 
     public void clickAddToCartButton() {
         getAddToCartLocator().click();
-    }
-
-    private WebElement getCartSummaryLayer() {
-        return context.getWebDriver().findElement(By.id(DemoshopLocators.productDescriptionPage.cartSummaryLayer));
-
     }
 
     private WebElement getProceedToCheckoutLocator() {

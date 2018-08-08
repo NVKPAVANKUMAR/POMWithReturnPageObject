@@ -1,18 +1,13 @@
 package main.java.util;
 
-import java.util.Arrays;
-import java.util.LinkedHashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.collections.list.SetUniqueList;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.WebDriver;
+
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public final class WindowStack {
     public static final int WAIT_INTERVAL = 1;

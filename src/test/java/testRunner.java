@@ -37,7 +37,7 @@ public class testRunner extends ExtentBase {
         startReport();
     }
 
-    // @Test
+    @Test
     public void test_01_SignUp() throws InterruptedException {
         startTest(new Object() {
         }.getClass().getEnclosingMethod().getName());
@@ -66,7 +66,7 @@ public class testRunner extends ExtentBase {
     }
 
     @Test
-    public void test_02_OrderDress() {
+    public void test_02_OrderDress() throws InterruptedException {
         startTest(new Object() {
         }.getClass().getEnclosingMethod().getName());
         homePage = appLaunch.navigateToHomePage();
@@ -74,10 +74,10 @@ public class testRunner extends ExtentBase {
         homePage.hoverOnWomenSelector();
         dressesPage = homePage.clickOnWomenDressSelector();
         assert dressesPage.textToAssert().equalsIgnoreCase(config.VERIFICATION_TEXT);
-        productDescriptionPage = dressesPage.clickOnProduct(3);
+        productDescriptionPage = dressesPage.clickOnProduct(2);
         assert productDescriptionPage.parseProductTitleText().equalsIgnoreCase(config.PRODUCT_VERIFICATION_TEXT);
         productDescriptionPage.selectSize("M");
-        productDescriptionPage.selectDressColor();
+        productDescriptionPage.selectDressColorFromList(2);
         productDescriptionPage.clickAddToCartButton();
         cartPage = productDescriptionPage.clickOnProceedToCheckout();
         assert cartPage.textToAssert().equalsIgnoreCase(config.CART_SPECIFICATION_TEXT);

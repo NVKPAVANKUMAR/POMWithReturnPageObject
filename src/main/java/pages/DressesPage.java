@@ -12,6 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class DressesPage extends Page {
     public DefaultPageFactory factory = new DefaultPageFactory();
@@ -36,17 +37,19 @@ public class DressesPage extends Page {
     }
 
     public ProductDescriptionPage clickOnDress() {
-        getDressLocator().click();
+        //getDressLocator().click();
+        action.moveToElement(getDressLocator()).click().build().perform();
         return factory.create(ProductDescriptionPage.class, true);
     }
 
     private List<WebElement> getProductLocator() {
+        context.getWebDriver().manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         return context.getWebDriver().findElements(By.xpath(DemoshopLocators.dressesDisplayPage.productLocator));
     }
 
     public ProductDescriptionPage clickOnProduct(int index) {
         List<WebElement> list = getProductLocator();
-        list.get(index).click();
+        action.click(list.get(index)).build().perform();
         return factory.create(ProductDescriptionPage.class, true);
     }
 

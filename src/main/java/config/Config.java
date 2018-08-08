@@ -19,5 +19,5 @@ public class Config {
     public static String PRODUCT_TO_SELECT = "3152KM01";
     public static String VERIFICATION_TEXT = "There are 5 products.";
     public static String PRODUCT_VERIFICATION_TEXT = "Printed Summer Dress";
-    public static String CART_SPECIFICATION_TEXT = "Color : Blue, Size : M";
+    public static String CART_SPECIFICATION_TEXT = "Printed Summer Dress";
 }
