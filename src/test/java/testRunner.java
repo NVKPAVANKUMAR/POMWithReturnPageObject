@@ -42,9 +42,9 @@ public class testRunner extends ExtentBase {
         startTest(new Object() {
         }.getClass().getEnclosingMethod().getName());
         homePage = appLaunch.navigateToHomePage();
-        assert homePage.isLogoDisplayed() == true;
+        assert homePage.isLogoDisplayed();
         signUpPage = homePage.clickOnSignUp();
-        assert signUpPage.isCreateButtonExist() == true;
+        assert signUpPage.isCreateButtonExist();
         signUpPage.input_Email(RandomEmailGenerator.generate());
         registrationPage = signUpPage.click_createAccountButton();
         Thread.sleep(3000);
@@ -70,7 +70,7 @@ public class testRunner extends ExtentBase {
         startTest(new Object() {
         }.getClass().getEnclosingMethod().getName());
         homePage = appLaunch.navigateToHomePage();
-        assert homePage.isLogoDisplayed() == true;
+        assert homePage.isLogoDisplayed();
         homePage.hoverOnWomenSelector();
         dressesPage = homePage.clickOnWomenDressSelector();
         assert dressesPage.textToAssert().equalsIgnoreCase(config.VERIFICATION_TEXT);

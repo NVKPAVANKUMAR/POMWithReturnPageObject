@@ -4,6 +4,7 @@ package main.java.helper;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import main.java.config.Application_Data;
 import main.java.config.Config;
 import main.java.factory.DefaultPageFactory;
@@ -53,15 +54,16 @@ public class Browser {
     }
 
 
-    public WebDriver getChromeDriver() {
-        System.setProperty("webdriver.chrome.driver", Application_Data.CHROME_DRIVER_PATH);
+    private WebDriver getChromeDriver() {
+        //System.setProperty("webdriver.chrome.driver", Application_Data.CHROME_DRIVER_PATH);
         DesiredCapabilities capability = DesiredCapabilities.chrome();
         capability.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
         capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         capability.setCapability("ignoreZoomSetting", true);
-        WebDriver chromeDriver = new ChromeDriver(capability);
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver(capability);
         //chromeDriver.manage().window().maximize();
-        return chromeDriver;
+        return driver;
     }
 
     public RemoteWebDriver getFireFoxRemoteWebDriver(String browserName, String platform, String platformName, String deviceName, String version) throws MalformedURLException {
