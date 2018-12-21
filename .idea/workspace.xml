@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b074007b-302c-4189-bf14-8f97494a4a84" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/helper/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/Browser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/helper/Browser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/helper/Browser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/java/testRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/java/testRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/STMExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/STMExtentReport.html" afterDir="false" />
-    </list>
+    <list default="true" id="b074007b-302c-4189-bf14-8f97494a4a84" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,24 +30,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="445">
               <caret line="218" selection-start-line="218" selection-end-line="218" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandomEmailGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/RandomEmailGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Logger.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/Logger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -99,8 +73,22 @@
       <file leaf-file-name="Browser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/helper/Browser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+            <state relative-caret-position="5">
+              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/util/TestContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#476#627#0" expanded="true" />
+                <element signature="e#626#627#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,7 +170,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -557,9 +545,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_pavan_nemalikanti_Downloads_SampleAutomation_Demoshop_testNG_xml - 2018.08.08 at 12h 31m 49s.xml">
-      <configuration name="C:/Users/pavan.nemalikanti/Downloads/SampleAutomation_Demoshop/testNG.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_pavan_nemalikanti_Downloads_SampleAutomation_Demoshop_testNG_xml - 2018.08.08 at 12h 32m 51s.xml">
       <configuration name="C:/Users/pavan.nemalikanti/Downloads/SampleAutomation_Demoshop/testNG.xml" configurationId="TestNG" />
     </history-entry>
@@ -587,9 +572,12 @@
     <history-entry file="testRunner_test_01_SignUp - 2018.12.21 at 15h 50m 09s.xml">
       <configuration name="testRunner.test_01_SignUp" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="testRunner_test_01_SignUp - 2018.12.21 at 15h 54m 19s.xml">
+      <configuration name="testRunner.test_01_SignUp" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -606,7 +594,7 @@
       <window_info anchor="right" id="JSON Viewer" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21742313" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21742313" />
       <window_info anchor="bottom" id="ConsoleMavenPlugin" order="7" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Maven-2 Build" order="3" />
@@ -634,7 +622,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pom/Page.java" />
     <entry file="file://$PROJECT_DIR$/src/pom/PageComponent.java" />
     <entry file="file://$PROJECT_DIR$/src/main/test/java/pages/HomePage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/test/java/factory/DefaultPageFactory.java" />
@@ -826,16 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/TestContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="325" lean-forward="true" selection-start-line="325" selection-end-line="325" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/ReportGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -913,10 +890,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/ThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="158" column="13" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/TestContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#476#627#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/helper/Browser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+        <state relative-caret-position="5">
+          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
         </state>
       </provider>
     </entry>
